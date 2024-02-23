@@ -1,8 +1,8 @@
  ###  DATE: 
 
-###  NAME: 
-###  ROLL NO :
-###  DEPARTMENT: 
+###  NAME: BEATRICE THOMAS
+###  ROLL NO : 212223110005
+###  DEPARTMENT: CSE ( IOT )
 
 **AIM**:  To interface a Analog  input (angular displacement sensor POT) and scale the values up on change in the input.
 
@@ -45,12 +45,10 @@ Potentiometers are commonly used to control electrical devices such as volume co
 CIRCUIT DIAGRAM
 
 
-
-
+**FIGURE -01
 
 ![image](https://user-images.githubusercontent.com/36288975/163530788-eec3cdc3-95e8-4d2d-8349-6d0ea4c9439c.png)
 
-**FIGURE -01
 **
 
 **PROCEDURE:**
@@ -68,27 +66,43 @@ CIRCUIT DIAGRAM
 
 
 **PROGRAM** 
- 
+ ```
+ int led=4;
+int sensorpot;
+void setup()
+{
+  pinMode(led, OUTPUT);
+  Serial.begin(9600);
+}
 
+void loop()
+{
+  sensorpot=analogRead(A0);
+  Serial.print("data=");
+  Serial.println(sensorpot);
+  delay(500);
+  if(sensorpot>500)
+  {
+    digitalWrite(led,HIGH);
+     delay(100);
+    digitalWrite(led,LOW);
+     delay(100);
+  }
+  else
+  {
+    digitalWrite(led,LOW);
+  }
+}
+```
+![alt text](<Screenshot 2024-02-23 200301.png>)
 
-
-
-
-
-
-
-
-**
 **Simulation output:** 
 **
+![alt text](<Screenshot 2024-02-23 200724.png>)
 
 
-[My image](username.github.com/repository/img/image.jpg)
-
-
-
-
+![alt text](<Screenshot 2024-02-23 200819.png>)
 
 
 
-**RESULT: ** Arduino uno analog input functioning is learned and interfaced with digital input switch .
+**RESULT:** Arduino uno analog input functioning is learned and interfaced with digital input switch .
