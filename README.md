@@ -1,4 +1,4 @@
- ###  DATE: 
+ ###  DATE:  22 - 02 - 2024
 
 ###  NAME: BEATRICE THOMAS
 ###  ROLL NO : 212223110005
@@ -97,7 +97,7 @@ void loop()
 ![alt text](<Screenshot 2024-02-23 200301.png>)
 
 **Simulation output:** 
-**
+
 ![alt text](<Screenshot 2024-02-23 200724.png>)
 
 
